@@ -853,6 +853,21 @@ button {
     margin-bottom: 2em;
 }
 
+/* FORM SUCCESS */
+
+.form-success {
+    text-align: center;
+    margin: 5rem;
+}
+
+.form-success img {
+    max-width: 80%;
+}
+
+.form-success a {
+    text-decoration: underline;
+}
+
 /* [DESKTOP] FOOTER */
 
 .footer {
