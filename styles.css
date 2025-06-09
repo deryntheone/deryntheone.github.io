@@ -629,6 +629,10 @@ button {
     background-color: #D13B62;
 }
 
+.introduction a {
+    text-decoration: underline;
+}
+
 /* GALLERY */
 
 .gallery {
