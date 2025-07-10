@@ -204,7 +204,11 @@ p {
         font-size: 40px;
     }
 
+    .sub-header {
+        flex-direction: column;
+    }
+
     .sub-head-img img {
-        width: 100px;
+        width: 150px;
     }
 }
