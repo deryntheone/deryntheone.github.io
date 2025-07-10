@@ -209,6 +209,6 @@ p {
     }
 
     .sub-head-img img {
-        width: 150px;
+        max-width: 200px;
     }
 }
