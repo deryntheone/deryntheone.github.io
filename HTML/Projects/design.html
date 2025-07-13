@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design projects | deryn theone</title>
+    <link rel="icon" type="image/x-icon" href="../../Assets/Deryn.ico">
+    <link rel="stylesheet" href="../../styles.css">
+
+    <meta name="description" content="view deryn theone's creative endeavors in design.">
+    <meta name="keywords" content="deryn, deryn theone, deryn hipe, design, writing, programming, personal website, portfolio">
+    <meta name="author" content="Deryn Theone">
+
+    <meta property="og:title" content="design projects | deryn theone">
+    <meta property="og:description" content="view deryn theone's creative endeavors in design.">
+    <meta property="og:image" content="https://deryntheone.github.io/Assets/OG.png">
+    <meta property="og:url" content="https://deryntheone.github.io/HTML/Projects/design.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_PH">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <a href="../../index.html" class="card-close">×</a>
+        </div>
+        <div class="card-body">
+            <div class="sub-header">
+                <div class="sub-head-txt">
+                    <h2>design projects</h2>
+                    <p>here are some more designs! i'm open to trying out new styles, and i'm comfortable using canva and a bit of photoshop/photopea!</p>
+                </div>
+            </div>
+
+            <h3>posters</h3>
+            <hr>
+            <div class="designs">
+                <img src="../../Assets/Designs/Posters/Arial.png">
+                <img src="../../Assets/Designs/Posters/Baguio.png">
+                <img src="../../Assets/Designs/Posters/Burger.png">
+                <img src="../../Assets/Designs/Posters/Institut de France.png">
+                <img src="../../Assets/Designs/Posters/Paris.png">
+                <img src="../../Assets/Designs/Posters/Philippine Eagle.png">
+            </div>
+
+            <h3>social media posts</h3>
+            <hr>
+            <div class="designs" id="square">
+                <img src="../../Assets/Designs/Social Media/1.png">
+                <img src="../../Assets/Designs/Social Media/4.png">
+                <img src="../../Assets/Designs/Social Media/2.png">
+                <img src="../../Assets/Designs/Social Media/5.png">
+                <img src="../../Assets/Designs/Social Media/3.png">
+                <img src="../../Assets/Designs/Social Media/6.png">
+            </div>
+
+            <div id="lightbox" class="lightbox">
+                <span class="lightbox-close" onclick="closeLightbox()">×</span>
+                <img id="lightbox-img" src="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.designs img');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+
+        images.forEach(img => {
+            img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightbox.style.display = 'flex';
+            });
+        });
+
+        window.closeLightbox = function () {
+            lightbox.style.display = 'none';
+        };
+        });
+    </script>
+</body>
+</html>
