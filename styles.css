@@ -100,10 +100,6 @@ p {
     flex-direction: column;
 }
 
-#long-card {
-    height: 800px;
-}
-
 .card-header {
     background-color: #495057;
     height: 3rem;
