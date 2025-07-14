@@ -140,18 +140,19 @@ p {
     max-width: 150px;
 }
 
-.row {
+.icon-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 4em;
 }
 
-.row img {
+.icon-row img {
     max-width: 60px;
     text-align: center;
 }
 
-.row p {
+.icon-row p {
     text-align: center;
 }
 
@@ -236,5 +237,10 @@ p {
 
     .sub-header {
         flex-direction: column;
+    }
+
+    .icon-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
