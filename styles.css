@@ -227,6 +227,10 @@ p {
     }
 
     .sub-head-img img {
-        width: 100px;
+        width: 200px;
+    }
+
+    .sub-header {
+        flex-direction: column;
     }
 }
