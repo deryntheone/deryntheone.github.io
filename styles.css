@@ -75,16 +75,17 @@ h2 {
     font-size: 40px;
 }
 
-.header h2 {
-    font-size: 20px;
-}
-
 h3 {
     font-size: 25px;
+    margin-bottom: 0.5em;
 }
 
 p {
     font-weight: 400;
+}
+
+b {
+    font-weight: 550;
 }
 
 .card {
@@ -94,7 +95,7 @@ p {
     border-radius: 10px;
     overflow: hidden;
     width: 700px;
-    height: 500px;
+    height: 800px;
     box-shadow: 0 0 30px #495057;
     display: flex;
     flex-direction: column;
@@ -117,10 +118,25 @@ p {
     padding: 3rem 4rem;
     overflow-y: auto;
     flex: 1;
+    scrollbar-gutter: stable;
 }
 
 .card-body p a {
     text-decoration: underline;
+}
+
+.mini-card {
+    margin: auto;
+    margin-bottom: 1em;
+    border: 2px solid #F8F9FA;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.mini-card:last-of-type {
+    margin-bottom: 0;
 }
 
 .header {
@@ -136,31 +152,61 @@ p {
     margin-bottom: 3em;
 }
 
+.sub-head-txt h2 {
+    margin-bottom: 0.5em;
+}
+
 .sub-head-img img {
     max-width: 150px;
 }
 
-.icon-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4em;
+.collapsible {
+    background-color: #343A40;
+    border: none;
+    outline: none;
+    font-family: 'Figtree', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #F8F9FA;
+    padding: 0;
 }
 
-.icon-row img {
+.collapsible:hover {
+    cursor: pointer;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-container img {
     max-width: 60px;
     text-align: center;
 }
 
-.icon-row p {
-    text-align: center;
-}
-
-.icon {
+.flex-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.flex-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#socials {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
 .project-header {
