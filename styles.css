@@ -1,8 +1,8 @@
 body {
-    background-color: #212529;
+    background-color: #5a7496;
     background-image: 
-        linear-gradient(to right, #2a2f33 1px, transparent 1px),
-        linear-gradient(to bottom, #2a2f33 1px, transparent 1px);
+        linear-gradient(to right, #6f8aad 1px, transparent 1px),
+        linear-gradient(to bottom, #6f8aad 1px, transparent 1px);
     background-size: 40px 40px;
     color: #F8F9FA;
     display: flex;
@@ -19,8 +19,8 @@ body::before {
     position: absolute;
     inset: 0;
     background-image: 
-        linear-gradient(to right, #2a2f33 1px, transparent 1px),
-        linear-gradient(to bottom, #2a2f33 1px, transparent 1px);
+        linear-gradient(to right, #6f8aad 1px, transparent 1px),
+        linear-gradient(to bottom, #6f8aad 1px, transparent 1px);
     background-size: 40px 40px;
     animation: drift 20s linear infinite;
     z-index: -1;
@@ -36,15 +36,15 @@ body::before {
 }
 
 ::-webkit-scrollbar-track {
-  background: #343A40;
+  background: #CAF0F8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #495057;
+  background: #CAF0F8;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #596065;
+  background: #CAF0F8;
 }
 
 a {
@@ -90,19 +90,19 @@ b {
 
 .card {
     margin: auto;
-    background-color: #343A40;
+    background-color: #355175;
     border: 2px solid #F8F9FA;
     border-radius: 10px;
     overflow: hidden;
     width: 700px;
     height: 800px;
-    box-shadow: 0 0 30px #495057;
+    box-shadow: 0 0 30px #CAF0F8;
     display: flex;
     flex-direction: column;
 }
 
 .card-header {
-    background-color: #495057;
+    background-color: #355175;
     height: 3rem;
     border-bottom: 2px solid #F8F9FA;
     border-top-left-radius: 10px;
@@ -161,7 +161,7 @@ b {
 }
 
 .collapsible {
-    background-color: #343A40;
+    background-color: #355175;
     border: none;
     outline: none;
     font-family: 'Figtree', sans-serif;
