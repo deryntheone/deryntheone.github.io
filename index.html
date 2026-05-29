@@ -13,204 +13,297 @@
 
     <meta property="og:title" content="deryn theone - designer, programmer, writer">
     <meta property="og:description" content="step into deryn's digital world!">
-    <meta property="og:image" content="https://deryntheone.github.io/Assets/OG.png">
     <meta property="og:url" content="https://deryntheone.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_PH">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="card">
-        <div class="card-header">
-            <a href="../index.html" class="card-close">×</a>
+
+    <div class="card-container">
+
+        <!-- USERNAME CARD -->
+        <div class="card username-card" onclick="goHome()">
+            <h2>@deryntheone</h2>
         </div>
-        <div class="card-body">
-            <div class="sub-header">
-                <div class="sub-head-img">
-                    <img src="../Assets/Images/Icon.svg">
+
+        <!-- HOME CONTENT -->
+        <div id="home-content">
+
+            <div class="main-card">
+                <div class="main-txt">
+                    <h1>hey, i'm <span class="underline">deryn</span>!</h1>
+                    <h4>INTJ-A • Ateneo de Manila SHS ‘28</h4>
+
+                    <p>
+                        i’m a student passionate about literature, design, and tech.
+                        <br><br>
+                        whenever i’m not wandering in the world of academics, you can catch me in my room playing video games, deciding my next read from my ever-growing TBR list, obsessing over one of my cats, or planning out my next schedule.
+                    </p>
                 </div>
-                <div class="sub-head-txt">
-                    <h2>deryn theone</h2>
-                    <p>`☆ a little bit of everything</p>
-                </div>
-            </div>
-            <p>hey! i'm <a target="_blank" href="https://www.thebump.com/b/deryn-baby-name">deryn</a>, a high school student from the philippines who loves taking on new challenges and projects. i am passionate about all things STEM, and i aspire to work in cybersecurity someday!<br><br>in my free time, you can catch me picking a book from my TBR list, playing genshin impact, or cuddling with one of my cats. cheers!</p>
-            
-            <div class="flex-container" id="socials">
-                <div class="flex-item">
-                    <a target="_blank" href="https://github.com/deryntheone">
-                        <img src="../Assets/Icons/Github.svg">
-                    </a>
-                </div>
-                <div class="flex-item">
-                    <a target="_blank" href="https://www.linkedin.com/in/deryntheone/">
-                        <img src="../Assets/Icons/Linkedin.svg">
-                    </a>
-                </div>
-                <div class="flex-item">
-                    <a target="_blank" href="https://www.instagram.com/deryntheone/">
-                        <img src="../Assets/Icons/Instagram.svg">
-                    </a>
-                </div>
-                <div class="flex-item">
-                    <a target="_blank" href="https://www.youtube.com/@deryntheone">
-                        <img src="../Assets/Icons/Youtube.svg">
-                    </a>
+
+                <div class="main-img">
+                    <img src="Assets/Myself.svg">
                 </div>
             </div>
 
+            <!-- PORTFOLIO BUTTONS -->
+            <div class="card-row">
 
-            <div class="mini-card">
-                <button type="button" class="collapsible">about</button>
-                <div class="content">
+                <div class="card portfolio-btn" onclick="showPage('designs')">
+                    <h3>designs</h3>
+                </div>
+
+                <div class="card portfolio-btn" onclick="showPage('articles')">
+                    <h3>articles</h3>
+                </div>
+
+                <div class="card portfolio-btn" onclick="showPage('coding')">
+                    <h3>coding</h3>
+                </div>
+
+            </div>
+
+            <!-- OTHER CARDS -->
+            <div class="card-row">
+
+                <div class="card">
                     <h3>affiliations</h3>
-                    <div class="flex-container">
-                        <div class="flex-item">
-                            <ul>
-                                <li>director of internal affairs</li>
-                                <li>chief of staff</li>
-                                <li>fundraising & events coordinator</li>
-                                <li>graphics & layout designer</li>
-                                <li>science & technology writer</li>
-                            </ul>
-                        </div>
-                        <div class="flex-item">
-                            <ul>
-                                <li><a target="_blank" href="https://www.instagram.com/youthdiplomacynetwork/">youth diplomacy network</a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/cybervalkyries/">cyber valkyries</a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/cherielle.code/">cherielle</a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/evanescentmagazine/">evanescent magazine</a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/explained.ph/">explained ph</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <h3>hobbies & interests</h3>
-                    <div class="flex-container">
-                        <div class="flex-item">
-                            <ul>
-                                <li>cybersecurity</li>
-                                <li>computer science</li>
-                                <li>programming</li>
-                                <li>mathematics</li>
-                                <li>science</li>
-                            </ul>
-                        </div>
-                        <div class="flex-item">
-                            <ul>
-                                <li>literature</li>
-                                <li>research</li>
-                                <li>graphic design</li>
-                                <li>gaming</li>
-                                <li>organizing</li>
-                            </ul>
-                        </div>
-                        <div class="flex-item">
-                            <ul>  
-                                <li>animals</li>
-                                <li>traveling</li>
-                                <li>food</li>
-                                <li>music</li>
-                                <li>photography</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <h3>media</h3>
-                    <div class="flex-container">
-                        <div class="flex-item">
-                            <ul>
-                                <li><b>films & television:</b> dead poets society, avatar: the last airbender</li>
-                                <li><b>books:</b> 1984 by george orwell, the hunger games by suzanne collins</li>
-                                <li><b>video games:</b> genshin impact, valorant, stardew valley</li>
-                                <li><b>music:</b> 5 seconds of summer, michael jackson, leon thomas</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <ul>
+                        <li><a target="_blank" href="https://www.instagram.com/youthdiplomacynetwork/">@youthdiplomacynetwork</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/cybervalkyries/">@cybervalkyries</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/cherielle.code/">@cherielle.code</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/explained.ph/">@explained.ph</a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/evanescentmagazine/">@evanescentmagazine</a></li>
+                    </ul>
                 </div>
+
+                <div class="card">
+                    <h3>statuses</h3>
+
+                    <ul>
+                        <li>📚 currently reading: the genealogy of morals by friedrich nietzsche</li>
+                        <li>🎮 currently playing: osu!, roblox</li>
+                        <li>🎬 currently watching: dan da dan</li>
+                    </ul>
+                </div>
+
             </div>
 
-             <div class="mini-card">
-                <button type="button" class="collapsible">projects</button>
-                <div class="content">
-                    <div class="project-header">
-                        <h3>design</h3>
-                        <a href="HTML/Projects/design.html"><p>view all</p></a>
-                    </div>
-                    <hr>
-                    <div class="designs-preview">
-                        <img src="../Assets/Designs/Posters/Arial.png">
-                        <img src="../Assets/Designs/Posters/Baguio.png">
-                        <img src="../Assets/Designs/Posters/Burger.png">
-                        <img src="../Assets/Designs/Social Media/1.png">
-                        <img src="../Assets/Designs/Social Media/2.png">
-                        <img src="../Assets/Designs/Social Media/3.png">
-                    </div>
-                    
-                    <div class="project-header">
-                        <h3>coding</h3>
-                        <a><p>view all</p></a>
-                    </div>
-                    <hr>
-                    <div class="coding">
-                        <a target="_blank" href="https://bci.edu.ph/">
-                            <h4>bci marikina website</h4>
-                            <p>07.01.25 | school website with html, css, and a bit of js</p>
-                        </a>
-                    </div>
-                    <div class="coding">
-                        <a target="_blank" href="https://deryn.neocities.org/">
-                            <h4>y2k-themed personal website</h4>
-                            <p>03.17.25 | old personal site on neocities with html and css</p>
-                        </a>
-                    </div>
-
-                    <div class="project-header">
-                        <h3>writing</h3>
-                        <a href="HTML/Projects/writing.html"><p>view all</p></a>
-                    </div>
-                    <hr>
-                    <div class="writing">
-                        <a target="_blank" href="https://explained.ph/forget-the-3-day-flu-this-one-stays-for-10/">
-                            <h4>forget the 3-day flu — this one stays for 10</h4>
-                            <p>01.15.26 | short-form science feature about the super flu</p>
-                        </a>
-                    </div>  
-                    <div class="writing">
-                        <a target="_blank" href="https://theyouthdiplomacynetwork.substack.com/p/from-dream-to-reality-how-perseverance">
-                            <h4>from dream to reality: how perseverance and passion open doors to prestigious universities</h4>
-                            <p>11.28.25 | feature on james rutland, an oxford PPE student</p>
-                        </a>
-                    </div>  
-                    <div class="writing">
-                        <a target="_blank" href="https://theyouthdiplomacynetwork.substack.com/p/a-new-turning-point-lee-jae-myungs">
-                            <h4>a new turning point: lee jae-myung’s rise to presidency</h4>
-                            <p>08.11.25 | feature on south korea's 14th president</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </div>
+
+        <!-- DESIGNS PAGE -->
+        <div id="designs-page" class="portfolio-page">
+
+            <div class="card">
+                <h3>social media posts</h3>
+                <div class="designs">
+                    <img src="/Assets/Designs/Social Media/1.png">
+                    <img src="/Assets/Designs/Social Media/4.png">
+                    <img src="/Assets/Designs/Social Media/2.png">
+                    <img src="/Assets/Designs/Social Media/5.png">
+                    <img src="/Assets/Designs/Social Media/3.png">
+                    <img src="/Assets/Designs/Social Media/6.png">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>posters</h3>
+                <div class="designs">
+                    <img src="/Assets/Designs/Posters/Arial.png">
+                    <img src="/Assets/Designs/Posters/Baguio.png">
+                    <img src="/Assets/Designs/Posters/Burger.png">
+                    <img src="/Assets/Designs/Posters/Institut de France.png">
+                    <img src="/Assets/Designs/Posters/Paris.png">
+                    <img src="/Assets/Designs/Posters/Philippine Eagle.png">
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>magazine spreads</h3>
+                <div class="designs">
+                    <img src="/Assets/Designs/Magazine Spreads/1.png">
+                    <img src="/Assets/Designs/Magazine Spreads/2.png">
+                    <img src="/Assets/Designs/Magazine Spreads/3.png">
+                    <img src="/Assets/Designs/Magazine Spreads/4.png">
+                    <img src="/Assets/Designs/Magazine Spreads/5.png">
+                    <img src="/Assets/Designs/Magazine Spreads/6.png">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ARTICLES PAGE -->
+        <div id="articles-page" class="portfolio-page">
+
+            <div class="card">
+                <a target="_blank" href="https://explained.ph/doh-monitors-ebola-threat-amid-who-alert/">
+                    <h3>DOH monitors Ebola threat amid WHO alert</h3>
+                    <p>05.21.26 | Explained PH</p>
+                </a>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://explained.ph/this-may-12-we-celebrate-nurses-around-the-world-but-how-much-do-we-actually-value-our-countrys-own/">
+                    <h3>This May 12, we celebrate nurses around the world—but how much do we actually value our country's own?</h3>
+                    <p>05.12.26 | Explained PH</p>
+                </a>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://www.facebook.com/story.php?story_fbid=122184527192469428&id=61564082862347#">
+                    <h3>Endangered Emperors</h3>
+                    <p>04.16.26 | Envisay</p>
+                </a>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://explained.ph/roblox-and-the-rise-of-brainrot/">
+                    <h3>Roblox and the rise of "brainrot"</h3>
+                    <p>04.03.26 | Explained PH</p>
+                </a>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://www.facebook.com/envisay/posts/pfbid033bgnJ9djrKDKLKVxcyFEYJtUK5s3taTHFYFaLkm3acsW5rz6eaCb6wroHWvBCT1al">
+                    <h3>Mangroves Matter</h3>
+                    <p>04.01.26 | Envisay</p>
+                </a>
+            </div>
+            <div class="card">
+                <a target="_blank" href="https://explained.ph/forget-the-3-day-flu-this-one-stays-for-10/">
+                    <h3>Forget the 3-day flu — this one stays for 10</h3>
+                    <p>01.15.26 | Explained PH</p>
+                </a>
+            </div>
+            <div class="card">
+                    <a target="_blank" href="https://theyouthdiplomacynetwork.substack.com/p/from-dream-to-reality-how-perseverance">
+                        <h3>From Dream to Reality: How Perseverance and Passion Open doors to Prestigious Universities</h3>
+                        <p>11.28.25 | Youth Diplomacy Network</p>
+                    </a>
+                </div>            
+            <div class="card">
+                    <a target="_blank" href="https://theyouthdiplomacynetwork.substack.com/p/a-new-turning-point-lee-jae-myungs">
+                        <h3>A New Turning Point: Lee Jae-Myung’s Rise to Presidency</h3>
+                        <p>08.11.25 | Youth Diplomacy Network</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://theyouthdiplomacynetwork.substack.com/p/more-than-a-title-the-advocacy-of">
+                        <h3>More than a Title: The Advocacy of Abhinav Anne</h3>
+                        <p>07.27.25 | Youth Diplomacy Network</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://theyouthdiplomacynetwork.substack.com/p/the-spectacle-of-politics-in-the">
+                        <h3>The Spectacle of Politics in the Age of Social Media</h3>
+                        <p>07.27.25 | Youth Diplomacy Network</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://theelysianchronicles.wixstudio.com/theelysianchronicles/post/nanlaban">
+                        <h3>"Nanlaban"</h3>
+                        <p>05.19.25 | The Elysian Chronicles</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://bci.edu.ph/HTML/feature.html">
+                        <h3> Faith, Fire, & a Decade of Dreams: The Story of BCI Marikina</h3>
+                        <p>03.30.25 | Berean Crosspointe International Marikina</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://sites.google.com/view/bcibhs/blog/hipe-testimonial">
+                        <h3>Should I Stay or Should I Go?</h3>
+                        <p>07.05.24 | Berean Homeschool</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a target="_blank" href="https://issuu.com/shoelandxsapatusan/docs/_updated_sxs_mag_23_single_1_/19">
+                        <h3>Unyielding Devotion: Journalists amidst an era dominated by vloggers</h3>
+                        <p>04.08.24 | The Shoeland x Ang Sapatusan (co-authored)</p>
+                    </a>
+                </div>
+        </div>
+
+        <!-- CODING PAGE -->
+        <div id="coding-page" class="portfolio-page">
+
+            <div class="card">
+                <a href="https://bci.edu.ph/" target="_blank"><h3>BCI Marikina Website</h3></a>
+                <p>HTML/CSS, JavaScript</p>
+                <img src="/Assets/Coding/BCI Marikina Website.png">
+            </div>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="contact-card">
+
+            <div class="email">
+                <h3>
+                    contact me at
+                    <a href="mailto:dlhipe@explained.ph">
+                        dlhipe@explained.ph
+                    </a>
+                </h3>
+            </div>
+
+            <div class="socials">
+                <a href="https://www.instagram.com/deryntheone/" target="_blank">
+                    <img src="Assets/Instagram.svg">
+                </a>
+
+                <a href="https://www.linkedin.com/in/deryntheone/" target="_blank">
+                    <img src="Assets/Linkedin.svg">
+                </a>
+            </div>
+
+        </div>
+
     </div>
 
     <script>
-        var coll = document.querySelectorAll(".collapsible");
 
-        coll.forEach(btn => {
-        btn.addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
+        function showPage(pageName) {
 
-            if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-            } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-            }
-        });
-        });
+            // hide home content
+            document.getElementById("home-content").style.display = "none";
+
+            // hide all portfolio pages
+            document.querySelectorAll(".portfolio-page").forEach(page => {
+                page.style.display = "none";
+            });
+
+            // show selected page
+            document.getElementById(pageName + "-page").style.display = "flex";
+
+            // change username card text
+            document.querySelector(".username-card h2").innerText = "←";
+
+            // padding
+            document.body.classList.add("portfolio-open");
+        }
+
+        function goHome() {
+
+            // show home content
+            document.getElementById("home-content").style.display = "flex";
+
+            // hide all portfolio pages
+            document.querySelectorAll(".portfolio-page").forEach(page => {
+                page.style.display = "none";
+            });
+
+            // restore username
+            document.querySelector(".username-card h2").innerText = "@deryntheone";
+
+            // padding
+            document.body.classList.remove("portfolio-open");
+        }
+
     </script>
+
 </body>
 </html>
