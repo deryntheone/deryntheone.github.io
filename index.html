@@ -26,12 +26,10 @@
 
     <div class="card-container">
 
-        <!-- USERNAME CARD -->
         <div class="card username-card" onclick="goHome()">
             <h2>@deryntheone</h2>
         </div>
 
-        <!-- HOME CONTENT -->
         <div id="home-content">
 
             <div class="main-card">
@@ -51,7 +49,6 @@
                 </div>
             </div>
 
-            <!-- PORTFOLIO BUTTONS -->
             <div class="card-row">
 
                 <div class="card portfolio-btn" onclick="showPage('designs')">
@@ -68,7 +65,6 @@
 
             </div>
 
-            <!-- OTHER CARDS -->
             <div class="card-row">
 
                 <div class="card">
@@ -97,7 +93,6 @@
 
         </div>
 
-        <!-- DESIGNS PAGE -->
         <div id="designs-page" class="portfolio-page">
 
             <div class="card">
@@ -138,7 +133,6 @@
 
         </div>
 
-        <!-- ARTICLES PAGE -->
         <div id="articles-page" class="portfolio-page">
 
             <div class="card">
@@ -227,7 +221,6 @@
                 </div>
         </div>
 
-        <!-- CODING PAGE -->
         <div id="coding-page" class="portfolio-page">
 
             <div class="card">
@@ -238,7 +231,6 @@
 
         </div>
 
-        <!-- CONTACT -->
         <div class="contact-card">
 
             <div class="email">
@@ -268,38 +260,29 @@
 
         function showPage(pageName) {
 
-            // hide home content
             document.getElementById("home-content").style.display = "none";
 
-            // hide all portfolio pages
             document.querySelectorAll(".portfolio-page").forEach(page => {
                 page.style.display = "none";
             });
 
-            // show selected page
             document.getElementById(pageName + "-page").style.display = "flex";
 
-            // change username card text
             document.querySelector(".username-card h2").innerText = "←";
 
-            // padding
             document.body.classList.add("portfolio-open");
         }
 
         function goHome() {
 
-            // show home content
             document.getElementById("home-content").style.display = "flex";
 
-            // hide all portfolio pages
             document.querySelectorAll(".portfolio-page").forEach(page => {
                 page.style.display = "none";
             });
 
-            // restore username
             document.querySelector(".username-card h2").innerText = "@deryntheone";
 
-            // padding
             document.body.classList.remove("portfolio-open");
         }
 
