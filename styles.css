@@ -111,7 +111,7 @@ p {
 }
 
 .main-card p {
-    width: 62%;
+    width: 61%;
 }
 
 .main-img {
@@ -184,93 +184,11 @@ p {
 }
 
 @media (max-width: 768px) {
-
-    * {
-        box-sizing: border-box;
-    }
-
     body {
-        padding: 20px 16px;
-        box-sizing: border-box;
+        padding: 2em;
     }
 
     .card-container {
-        width: 100%;
-        max-width: 520px;
-        margin: 0 auto;
-        padding: 0 12px;
-        box-sizing: border-box;
-    }
-
-    .card-row {
-        flex-direction: column;
-    }
-
-    .main-card {
-        position: relative;
-        padding: 1.5em;
-        overflow: hidden;
-    }
-
-    .main-card p {
-        width: 100%;
-    }
-
-    .main-img {
-        position: static;
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    .main-img img {
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 34px;
-    }
-
-    h2 {
-        font-size: 28px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 15px;
-    }
-
-    .designs {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .contact-card {
-        flex-direction: column;
-        gap: 16px;
-        text-align: center;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .card,
-    .contact-card {
-        padding: 1em 1.25em;
-    }
-
-    .portfolio-page {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 12px;
-    }
-
-    .portfolio-page .card {
-        width: 100%;
+        width: calc(100vw - 4em);
     }
 }
