@@ -163,14 +163,14 @@ p {
 .designs {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: 2em;
 }
 
 .designs img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     cursor: pointer;
 }
@@ -178,9 +178,8 @@ p {
 .card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
-    margin-bottom: 2em;
 }
 
 @media (max-width: 768px) {
