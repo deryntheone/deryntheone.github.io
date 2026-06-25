@@ -101,6 +101,28 @@ p {
     flex: 1;
 }
 
+#flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#flex .txt {
+    flex: 1;
+}
+
+#flex .img {
+    margin-left: auto;
+}
+
+#flex .img img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
 .main-card {
     position: relative;
     background: #2B3043;
